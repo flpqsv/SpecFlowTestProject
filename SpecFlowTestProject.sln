@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowTestProject", "SpecFlowTestProject\SpecFlowTestProject.csproj", "{32E86894-E221-4034-A193-CED85D28B27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBookModelsApiTests", "NewBookModelsApiTests\NewBookModelsApiTests.csproj", "{ABDE53C6-65BB-4086-AA3E-4296082A8B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTests", "SeleniumTests\SeleniumTests.csproj", "{71A999A8-2E9A-4777-BFA5-58B64FD95E4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E86894-E221-4034-A193-CED85D28B27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E86894-E221-4034-A193-CED85D28B27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E86894-E221-4034-A193-CED85D28B27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E86894-E221-4034-A193-CED85D28B27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDE53C6-65BB-4086-AA3E-4296082A8B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDE53C6-65BB-4086-AA3E-4296082A8B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDE53C6-65BB-4086-AA3E-4296082A8B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDE53C6-65BB-4086-AA3E-4296082A8B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A999A8-2E9A-4777-BFA5-58B64FD95E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A999A8-2E9A-4777-BFA5-58B64FD95E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A999A8-2E9A-4777-BFA5-58B64FD95E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A999A8-2E9A-4777-BFA5-58B64FD95E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

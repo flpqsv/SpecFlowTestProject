@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AAPI_002Ff_003AAuthSignInSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ACompanySignUpSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ASignInSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=35b4f7d5_002D9efc_002D43ab_002D8562_002D82a4ab6a4771/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.Tests.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.SignInPageTests.CheckUserAccountBlockMessage&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.LoginFeature&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

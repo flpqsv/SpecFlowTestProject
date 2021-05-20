@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{32E86894-E221-4034-A193-CED85D28B27E}|Default">
+  <MonoDevelop.Ide.ItemProperties.SpecFlowTestProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpecFlowTestProject/Login.feature">
+    <Files>
+      <File FileName="SpecFlowTestProject/Login.feature" Line="7" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpecFlowTestProject" expanded="True" selected="True">
+            <Node name="SpecFlowTestProject" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
