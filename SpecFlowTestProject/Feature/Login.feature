@@ -19,7 +19,7 @@ I want to be logged in NewBookModels
           | 343324 | asd      |
         
     
-    Scenario Outline: It is not possible to login in NewBookModels with invalid email
+    Scenario: It is not possible to login in NewBookModels with invalid email
         Given Client is created
         And Sign in page is opened
         When I login with invalid email
@@ -27,7 +27,7 @@ I want to be logged in NewBookModels
           | randomEmail | 123qweQWE! |
         Then Error message wrong email is displayed on Login page
         
-    Scenario Outline: It is not possible to login in NewBookModels with invalid password
+    Scenario: It is not possible to login in NewBookModels with invalid password
         Given Client is created
         And Sign in page is opened
         When I login with invalid password
@@ -35,7 +35,7 @@ I want to be logged in NewBookModels
           | godedo6298@cnxingye.com | randomPass |
         Then Error message wrong password is displayed on Login page
         
-  Scenario Outline: It is not possible to login to blocked account in NewBookModels
+  Scenario: It is not possible to login to blocked account in NewBookModels
     Given Sign in page is opened
     When I login with data
       | email                   | password  |

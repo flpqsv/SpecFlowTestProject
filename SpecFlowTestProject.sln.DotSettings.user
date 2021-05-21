@@ -7,5 +7,7 @@
     &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.Tests.Test1&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.SignInPageTests.CheckUserAccountBlockMessage&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.LoginFeature&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsPossibleToRegistrateInNewBookModelsWithValidData&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsImpossibleToRegistrateInNewBookModelsWithNoDataProvided&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

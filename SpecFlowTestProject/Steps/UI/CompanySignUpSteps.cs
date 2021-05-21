@@ -45,5 +45,17 @@ namespace SpecFlowTestProject.Steps.UI
         {
             Assert.AreEqual("User account is blocked.", _signInPage.GetUserAccountBlockMessage());
         }
+        
+        [Then(@"Successfully created account")]
+        public void SuccessfullyCreatedAccount()
+        {
+            Assert.AreEqual("https://newbookmodels.com/join/company", _webDriver.Url);
+        }
+        
+        [Then(@"Account is not created")]
+        public void AccountIsNotCreated()
+        {
+            Assert.AreNotEqual("https://newbookmodels.com/join/company", _webDriver.Url);
+        }
     }
 }
