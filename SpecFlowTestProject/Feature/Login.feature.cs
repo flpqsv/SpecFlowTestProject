@@ -162,14 +162,14 @@ namespace SpecFlowTestProject.Feature
 #line 18
         testRunner.And("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "randomEmail",
                             "123qweQWE!"});
 #line 19
-        testRunner.When("I login with invalid email", ((string)(null)), table1, "When ");
+        testRunner.When("I login with invalid email", ((string)(null)), table2, "When ");
 #line hidden
 #line 22
         testRunner.Then("Error message wrong email is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -211,14 +211,14 @@ namespace SpecFlowTestProject.Feature
 #line 26
         testRunner.And("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "godedo6298@cnxingye.com",
                             "randomPass"});
 #line 27
-        testRunner.When("I login with invalid password", ((string)(null)), table2, "When ");
+        testRunner.When("I login with invalid password", ((string)(null)), table3, "When ");
 #line hidden
 #line 30
         testRunner.Then("Error message wrong password is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -257,14 +257,14 @@ namespace SpecFlowTestProject.Feature
 #line 33
         testRunner.Given("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table3.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "godedo6298@cnxingye.com",
                             "Mabel123!"});
 #line 34
-        testRunner.When("I login with data", ((string)(null)), table3, "When ");
+        testRunner.When("I login with data", ((string)(null)), table4, "When ");
 #line hidden
 #line 37
         testRunner.Then("Error message account is blocked is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

@@ -87,7 +87,7 @@ namespace SpecFlowTestProject.Feature
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is possible to register in NewBookModels with valid data", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 8
+#line 9
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -107,30 +107,30 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 9
+#line 10
         testRunner.Given("Sign up page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "first_name",
                             "last_name",
                             "email",
                             "password",
                             "confirm_password",
                             "phone"});
-                table4.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "MaBelle",
                             "Parker",
                             "",
                             "Mabel123!",
                             "Mabel123!",
                             "123.321.1122"});
-#line 10
-        testRunner.When("I register with valid data", ((string)(null)), table4, "When ");
-#line hidden
-#line 13
-        testRunner.And("I click Submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+        testRunner.When("I register with valid data", ((string)(null)), table5, "When ");
 #line hidden
 #line 14
+        testRunner.And("I click Submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
         testRunner.Then("Successfully created account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -138,13 +138,13 @@ namespace SpecFlowTestProject.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("It is impossible to registrate in NewBookModels with no data provided")]
-        public virtual void ItIsImpossibleToRegistrateInNewBookModelsWithNoDataProvided()
+        [NUnit.Framework.DescriptionAttribute("It is impossible to register with the already existing email")]
+        public virtual void ItIsImpossibleToRegisterWithTheAlreadyExistingEmail()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is impossible to registrate in NewBookModels with no data provided", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is impossible to register with the already existing email", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -164,13 +164,73 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 17
+#line 18
         testRunner.Given("Sign up page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 18
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                            "first_name",
+                            "last_name",
+                            "email",
+                            "password",
+                            "confirm_password",
+                            "phone"});
+                table6.AddRow(new string[] {
+                            "MaBelle",
+                            "Parker",
+                            "",
+                            "Mabel123!",
+                            "Mabel123!",
+                            "123.321.1122"});
+#line 19
+        testRunner.When("I register with used email", ((string)(null)), table6, "When ");
+#line hidden
+#line 22
+        testRunner.And("I click Submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+        testRunner.Then("Account is not created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 24
+        testRunner.And("Error message email already exists is displayed on registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("It is impossible to register in NewBookModels with no data provided")]
+        public virtual void ItIsImpossibleToRegisterInNewBookModelsWithNoDataProvided()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is impossible to register in NewBookModels with no data provided", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 26
+    this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 27
+        testRunner.Given("Sign up page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 28
         testRunner.When("I click Submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 19
+#line 29
         testRunner.Then("Account is not created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -181,7 +241,6 @@ namespace SpecFlowTestProject.Feature
         [NUnit.Framework.DescriptionAttribute("It is impossible to register in NewMookModels with invalid data provided")]
         [NUnit.Framework.TestCaseAttribute("", "Parker", "", "Mabel123!", "Mabel123!", "123.321.1122", null)]
         [NUnit.Framework.TestCaseAttribute("MaBelle", "", "", "Mabel123!", "Mabel123!", "123.321.1122", null)]
-        [NUnit.Framework.TestCaseAttribute("MaBelle", "Parker", "wrongEmail", "Mabel123!", "Mabel123!", "123.321.1122", null)]
         [NUnit.Framework.TestCaseAttribute("MaBelle", "Parker", "", "random", "random", "123.321.1122", null)]
         [NUnit.Framework.TestCaseAttribute("MaBelle", "Parker", "", "Mabel123!", "random", "123.321.1122", null)]
         [NUnit.Framework.TestCaseAttribute("MaBelle", "Parker", "", "Mabel123!", "Mabel123!", "", null)]
@@ -196,7 +255,7 @@ namespace SpecFlowTestProject.Feature
             argumentsOfScenario.Add("confirm_password", confirm_Password);
             argumentsOfScenario.Add("phone", phone);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is impossible to register in NewMookModels with invalid data provided", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
+#line 31
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -216,30 +275,30 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 22
+#line 32
         testRunner.Given("Sign up page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                             "first_name",
                             "last_name",
                             "email",
                             "password",
                             "confirm_password",
                             "phone"});
-                table5.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             string.Format("{0}", first_Name),
                             string.Format("{0}", last_Name),
-                            string.Format("{0}", email),
+                            "",
                             string.Format("{0}", password),
                             string.Format("{0}", confirm_Password),
                             string.Format("{0}", phone)});
-#line 23
-        testRunner.When("I register with data", ((string)(null)), table5, "When ");
+#line 33
+        testRunner.When("I register with data", ((string)(null)), table7, "When ");
 #line hidden
-#line 26
+#line 36
         testRunner.And("I click Submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 27
+#line 37
         testRunner.Then("Account is not created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

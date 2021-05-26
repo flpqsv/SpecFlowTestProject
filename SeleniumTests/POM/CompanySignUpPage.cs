@@ -28,6 +28,7 @@ namespace SeleniumTests.POM
         private static readonly By _wrongPasswordMessage = By.XPath("//div[contains(text(),'Invalid password format')]");
         private static readonly By _wrongConfPasswordMessage = By.XPath("//div[contains(text(),'Passwords must match')]");
         private static readonly By _emptyPhoneMessage = By.XPath("//div[contains(text(),'Invalid phone format')]");
+        private static readonly By _emailAlreadyExists = By.XPath("//div[contains(text(),'user with this email already exists.')]");
 
         public CompanySignUpPage(IWebDriver webDriver)
         {
@@ -155,6 +156,12 @@ namespace SeleniumTests.POM
         public string GetWrongPhoneMessage()
         {
             string errorMessage = _webDriver.FindElement(_emptyPhoneMessage).Text;
+            return errorMessage;
+        }
+        
+        public string GetEmailAlreadyExistsMessage()
+        {
+            string errorMessage = _webDriver.FindElement(_emailAlreadyExists).Text;
             return errorMessage;
         }
     }

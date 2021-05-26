@@ -16,7 +16,6 @@ namespace SpecFlowTestProject.Steps.UI
     {
         private readonly ScenarioContext _scenarioContext;
         private readonly CompanySignUpPage _companySignUpPage;
-        private readonly SignInPage _signInPage;
         private readonly IWebDriver _webDriver;
 
         public SignUpSteps(ScenarioContext scenarioContext)
@@ -24,7 +23,6 @@ namespace SpecFlowTestProject.Steps.UI
             _scenarioContext = scenarioContext;
             _webDriver = _scenarioContext.Get<IWebDriver>(Context.WebDriver);
             _companySignUpPage = new CompanySignUpPage(_webDriver);
-            _signInPage = new SignInPage(_webDriver);
         }
 
         [Given(@"Sign up page is opened")]
@@ -80,6 +78,28 @@ namespace SpecFlowTestProject.Steps.UI
                 (string)data.confirm_password, (string)data.phone);
         }
         
+        [When(@"I register with used email")]
+        public void IRegistrateWithUsedEmail(Table table)
+        {
+            dynamic data = table.CreateDynamicInstance();
+
+            SignUpWithUsedEmail((string)data.first_name, (string)data.last_name, (string)data.email, (string)data.password, 
+                (string)data.confirm_password, (string)data.phone);
+        }
+        
+        public void SignUpWithUsedEmail(string firstName, string lastName, string email, string password, string confirmPassword,
+            string phone)
+        {
+            email = "godedo6298@cnxingye.com";
+            
+            _companySignUpPage.SetFirstName(firstName);
+            _companySignUpPage.SetLastName(lastName);
+            _companySignUpPage.SetEmail(email);
+            _companySignUpPage.SetPassword(password);
+            _companySignUpPage.SetConfirmPassword(confirmPassword);
+            _companySignUpPage.SetPhone(phone);
+        }
+        
         [Then(@"Successfully created account")]
         public void SuccessfullyCreatedAccount()
         {
@@ -92,20 +112,10 @@ namespace SpecFlowTestProject.Steps.UI
             Assert.AreNotEqual("https://newbookmodels.com/join/company", _webDriver.Url);
         }
         
-        public class RegistrationModel
+        [Then(@"Error message email already exists is displayed on registration page")]
+        public void ThenErrorMessageEmailAlreadyExistsIsDisplayedOnLoginPage()
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Email { get; set; }
-            public string Password { get; set; }
-            public string ConfirmPassword{ get; set; }
-            public string PhoneNumber { get; set; }
-
-            public RegistrationModel()
-            {
-                var date = DateTime.Now.ToString("yyyy.MM.dd.hh.mm.ss");
-                Email = $"mabel.{date}@gmail.com";
-            }
+            Assert.AreEqual("user with this email already exists.", _companySignUpPage.GetEmailAlreadyExistsMessage());
         }
     }
 }

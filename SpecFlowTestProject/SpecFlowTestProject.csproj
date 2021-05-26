@@ -29,10 +29,25 @@
         <Generator>SpecFlowSingleFileGenerator</Generator>
         <LastGenOutput>Login.feature.cs</LastGenOutput>
       </SpecFlowFeatureFiles>
+      <SpecFlowFeatureFiles Update="Feature\AccountSettingsFeature.feature">
+        <CodeBehindFile>Feature/AccountSettingsFeature.feature.cs</CodeBehindFile>
+      </SpecFlowFeatureFiles>
+      <SpecFlowFeatureFiles Update="Feature\Registration.feature">
+        <CodeBehindFile>Feature/Registration.feature.cs</CodeBehindFile>
+      </SpecFlowFeatureFiles>
+      <SpecFlowFeatureFiles Update="Feature\Login.feature">
+        <CodeBehindFile>Feature/Login.feature.cs</CodeBehindFile>
+      </SpecFlowFeatureFiles>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\NewBookModelsApiTests\NewBookModelsApiTests.csproj" />
       <ProjectReference Include="..\SeleniumTests\SeleniumTests.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Feature\API\RegFeature.feature.cs">
+        <DependentUpon>RegFeature.feature</DependentUpon>
+      </Compile>
     </ItemGroup>
 </Project>

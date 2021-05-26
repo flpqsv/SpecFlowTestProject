@@ -50,7 +50,7 @@ namespace SeleniumTests.POM
         private static readonly By _newLastName = By.XPath("//div[1]/nb-account-info-general-information[1]/form[1]/div[2]/div[1]/common-input[2]/label[1]/input[1]");
         private static readonly By _newLocation = By.XPath("//div[1]/nb-account-info-general-information[1]/form[1]/div[2]/div[1]/common-google-maps-autocomplete[1]/label[1]/input[1]");
         private static readonly By _newIndustry = By.XPath("//div[1]/nb-account-info-general-information[1]/form[1]/div[2]/div[1]/common-input[3]/label[1]/input[1]");
-        private static readonly By _newEmail = By.XPath("//div[1]/nb-account-info-email-address[1]/form[1]/div[2]/div[1]/nb-paragraph[1]/div[1]/div[1]/div[1]/span[1]");
+        private static readonly By _newEmail = By.XPath("//form[1]/div[2]/div[1]/nb-paragraph[1]/div[1]/div[1]/div[1]/span[1]");
         private static readonly By _newNumber = By.XPath("//div[2]/div[1]/nb-paragraph[2]/div[1]/span[1]");
         
         private static readonly By _errorMessageWrongPassword = By.XPath("//span[contains(text(),'Invalid old password.')]");

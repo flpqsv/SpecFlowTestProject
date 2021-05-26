@@ -1,36 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AAPI_002Ff_003AAuthSignInSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AAPI_002Ff_003ARegistrationSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ACompanySignUpSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ASignInSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=35b4f7d5_002D9efc_002D43ab_002D8562_002D82a4ab6a4771/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Or&gt;
-    &lt;And&gt;
-      &lt;TestAncestor&gt;
-        &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.Tests.Test1&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::71A999A8-2E9A-4777-BFA5-58B64FD95E4C::.NETCoreApp,Version=v3.1::SeleniumTests.SignInPageTests.CheckUserAccountBlockMessage&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.LoginFeature&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsPossibleToRegistrateInNewBookModelsWithValidData&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsImpossibleToRegistrateInNewBookModelsWithNoDataProvided&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsImpossibleToRegisterInNewMookModelsWithInvalidDataProvided&lt;/TestId&gt;
-        &lt;TestId&gt;NUnit3x::32E86894-E221-4034-A193-CED85D28B27E::.NETCoreApp,Version=v3.1::SpecFlowTestProject.Feature.RegistrationFeature.ItIsPossibleToRegisterInNewBookModelsWithValidData&lt;/TestId&gt;
-      &lt;/TestAncestor&gt;
-      &lt;Not&gt;
-        &lt;Project Location="/Users/Mabelle/Desktop/SpecFlowTestProject/SeleniumTests" Presentation="&amp;lt;SeleniumTests&amp;gt;" /&gt;
-      &lt;/Not&gt;
-    &lt;/And&gt;
-    &lt;TestAncestor&gt;
-      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests.Test1&lt;/TestId&gt;
-      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests&lt;/TestId&gt;
-    &lt;/TestAncestor&gt;
-  &lt;/Or&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=245ba640_002Dc268_002D47d6_002Daa0d_002D00d0c7106026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ItIsImpossibleToRegisterInNewMookModelsWithInvalidDataProvided" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;ProjectFolder&gt;32E86894-E221-4034-A193-CED85D28B27E/d:Feature/d:API&lt;/ProjectFolder&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=85e2bd72_002Da8c1_002D4077_002D84d5_002Daef9e058653c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests.Test1&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a5970e45_002D9a68_002D4bc2_002Daf87_002Dad605aebd7bb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests.Test1&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	
+	
+	</wpf:ResourceDictionary>
