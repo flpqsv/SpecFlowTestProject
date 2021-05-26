@@ -95,3 +95,13 @@
 /Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/obj/Debug/netcoreapp3.1/NewBookModelsApiTests.dll
 /Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/obj/Debug/netcoreapp3.1/NewBookModelsApiTests.pdb
 /Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/obj/Debug/netcoreapp3.1/NewBookModelsApiTests.genruntimeconfig.cache
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/BoDi.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/Dynamitey.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/Gherkin.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/TechTalk.SpecFlow.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/SpecFlow.Assist.Dynamic.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/Utf8Json.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/NewBookModelsApiTests/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

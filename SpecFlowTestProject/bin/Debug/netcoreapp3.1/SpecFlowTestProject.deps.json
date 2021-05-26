@@ -18,6 +18,7 @@
           "Selenium.WebDriver": "4.0.0-beta2",
           "SeleniumTests": "1.0.0",
           "SpecFlow": "3.7.38",
+          "SpecFlow.Assist.Dynamic": "1.4.2",
           "SpecFlow.NUnit": "3.7.38",
           "SpecFlow.Tools.MsBuild.Generation": "3.7.38",
           "WebDriverManager": "2.11.1"
@@ -56,6 +57,19 @@
           }
         }
       },
+      "Dynamitey/2.0.9.136": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Dynamitey.dll": {
+            "assemblyVersion": "2.0.9.136",
+            "fileVersion": "2.0.9.136"
+          }
+        }
+      },
       "Gherkin/6.0.0": {
         "dependencies": {
           "Utf8Json": "1.3.7"
@@ -86,6 +100,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.4.1": {},
       "Microsoft.DotNet.InternalAbstractions/1.0.0": {
         "dependencies": {
           "System.AppContext": "4.1.0",
@@ -559,6 +574,18 @@
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {
             "assemblyVersion": "3.7.0.0",
             "fileVersion": "3.7.38.46845"
+          }
+        }
+      },
+      "SpecFlow.Assist.Dynamic/1.4.2": {
+        "dependencies": {
+          "Dynamitey": "2.0.9.136",
+          "SpecFlow": "3.7.38"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SpecFlow.Assist.Dynamic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1336,7 +1363,8 @@
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "3.16.1",
           "Newtonsoft.Json": "13.0.1",
-          "RestSharp": "106.11.8-alpha.0.14"
+          "RestSharp": "106.11.8-alpha.0.14",
+          "SpecFlow.Assist.Dynamic": "1.4.2"
         },
         "runtime": {
           "NewBookModelsApiTests.dll": {}
@@ -1349,6 +1377,7 @@
           "NUnit3TestAdapter": "3.16.1",
           "RestSharp": "106.11.8-alpha.0.14",
           "Selenium.WebDriver": "4.0.0-beta2",
+          "SpecFlow.Assist.Dynamic": "1.4.2",
           "WebDriverManager": "2.11.1"
         },
         "runtime": {
@@ -1384,6 +1413,13 @@
       "path": "cucumber.messages/6.0.1",
       "hashPath": "cucumber.messages.6.0.1.nupkg.sha512"
     },
+    "Dynamitey/2.0.9.136": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SzGWOl8nKR4r7WYiyMgJ0n/MuncdtPSyjxe1+znH8KVKOFQAckXFOeqOXgcWSMLHT+ehAYtZHPWjX+GsH7eI4Q==",
+      "path": "dynamitey/2.0.9.136",
+      "hashPath": "dynamitey.2.0.9.136.nupkg.sha512"
+    },
     "Gherkin/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1404,6 +1440,13 @@
       "sha512": "sha512-PM5YLtyN45EyUGePJpaNogndlaQPrMgQQXHKMhMESC6KfSVvt+j7+dxBi8NYC6X6dZVysf7ngwhSW3wwvPJRSQ==",
       "path": "microsoft.codecoverage/16.5.0",
       "hashPath": "microsoft.codecoverage.16.5.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A5hI3gk6WpcBI0QGZY6/d5CCaYUxJgi7iENn1uYEng+Olo8RfI5ReGVkjXjeu3VR3srLvVYREATXa2M0X7FYJA==",
+      "path": "microsoft.csharp/4.4.1",
+      "hashPath": "microsoft.csharp.4.4.1.nupkg.sha512"
     },
     "Microsoft.DotNet.InternalAbstractions/1.0.0": {
       "type": "package",
@@ -1649,6 +1692,13 @@
       "sha512": "sha512-3m2t8FvSoCmCzEiFttuLYr8hRLllufIZSQW9e1+hUk7Yb+EhFpdgCehJmQZXgy8XROlVEDLEI+mVCSpNDXE4bQ==",
       "path": "specflow/3.7.38",
       "hashPath": "specflow.3.7.38.nupkg.sha512"
+    },
+    "SpecFlow.Assist.Dynamic/1.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nOvPHddTUT4NwK4IH/SXYDWbK421SfXgBx/Hu3SEepW0V3BhcXCzF5T6OTNVoK92sXoV4pKHN+2lqQaaBsYx9A==",
+      "path": "specflow.assist.dynamic/1.4.2",
+      "hashPath": "specflow.assist.dynamic.1.4.2.nupkg.sha512"
     },
     "SpecFlow.NUnit/3.7.38": {
       "type": "package",

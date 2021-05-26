@@ -1,5 +1,7 @@
 using System.Linq;
+using System.Threading;
 using NewBookModelsApiTests.Models.Auth;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumTests.POM;
 using SpecflowTestProject;
@@ -13,12 +15,15 @@ namespace SpecFlowTestProject.Steps.UI
     {
         private readonly ScenarioContext _scenarioContext;
         private readonly SignInPage _signInPage;
+        private readonly AccountSettingsPage _accountSettingsPage;
+        private readonly IWebDriver _webDriver;
 
         public SignInSteps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
-            var webDriver = _scenarioContext.Get<IWebDriver>(Context.WebDriver);
-            _signInPage = new SignInPage(webDriver);
+            _webDriver = _scenarioContext.Get<IWebDriver>(Context.WebDriver);
+            _signInPage = new SignInPage(_webDriver);
+            _accountSettingsPage = new AccountSettingsPage(_webDriver);
         }
 
         [Given(@"Sign in page is opened")]
@@ -27,14 +32,14 @@ namespace SpecFlowTestProject.Steps.UI
             _signInPage.OpenPage();
         }
 
-        [When(@"I input email of created client in email field")]
+        [When(@"I input valid email in email field")]
         public void WhenIInputEmailOfCreatedClientInEmailField()
         {
             var user = _scenarioContext.Get<ClientAuthModel>(Context.User);
             _signInPage.SetEmail(user.User.Email);
         }
 
-        [When(@"I input password of created client in password field")]
+        [When(@"I input valid password in password field")]
         public void WhenIInputPasswordOfCreatedClientInEmailField()
         {
             _signInPage.SetPassword(Constants.Password);
@@ -74,6 +79,32 @@ namespace SpecFlowTestProject.Steps.UI
             _signInPage.SetEmail(loginModels[0].Email);
             _signInPage.SetPassword(loginModels[0].Password);
             _signInPage.ClickLoginButton();
+        }
+        
+        [Then(@"Successfully logged in NewBookModels as created client")]
+        public void ThenSuccessfullyLoggedInNewBookModelAsCreatedClient()
+        {
+            Thread.Sleep(2000);
+            _accountSettingsPage.GoToEditPage();
+            Assert.AreEqual("https://newbookmodels.com/account-settings/account-info/edit", _webDriver.Url);
+        }
+        
+        [Then(@"Error message wrong email is displayed on Login page")]
+        public void ThenErrorMessageWrongEmailIsDisplayedOnLoginPage()
+        {
+            Assert.AreEqual("Invalid Email", _signInPage.GetWrongEmailMessage());
+        }
+        
+        [Then(@"Error message wrong password is displayed on Login page")]
+        public void ThenErrorMessageWrongPasswordIsDisplayedOnLoginPage()
+        {
+            Assert.AreEqual("Please enter a correct email and password.", _signInPage.GetWrongPasswordMessage());
+        }
+        
+        [Then(@"Error message account is blocked is displayed on Login page")]
+        public void ThenErrorMessageAccountIsBlockedIsDisplayedOnLoginPage()
+        {
+            Assert.AreEqual("User account is blocked.", _signInPage.GetUserAccountBlockMessage());
         }
 
         public class LoginModel

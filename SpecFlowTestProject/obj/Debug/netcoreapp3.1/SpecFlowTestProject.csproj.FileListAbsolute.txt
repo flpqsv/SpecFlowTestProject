@@ -130,3 +130,5 @@
 /Users/Mabelle/Desktop/SpecFlowTestProject/SpecFlowTestProject/bin/Debug/netcoreapp3.1/SeleniumTests.dll
 /Users/Mabelle/Desktop/SpecFlowTestProject/SpecFlowTestProject/bin/Debug/netcoreapp3.1/NewBookModelsApiTests.pdb
 /Users/Mabelle/Desktop/SpecFlowTestProject/SpecFlowTestProject/bin/Debug/netcoreapp3.1/SeleniumTests.pdb
+/Users/Mabelle/Desktop/SpecFlowTestProject/SpecFlowTestProject/bin/Debug/netcoreapp3.1/Dynamitey.dll
+/Users/Mabelle/Desktop/SpecFlowTestProject/SpecFlowTestProject/bin/Debug/netcoreapp3.1/SpecFlow.Assist.Dynamic.dll

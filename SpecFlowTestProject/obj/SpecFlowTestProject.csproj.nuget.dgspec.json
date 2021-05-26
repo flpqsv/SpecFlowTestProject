@@ -54,9 +54,21 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.0-preview3, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[106.11.8-alpha.0.14, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -124,6 +136,10 @@
               "target": "Package",
               "version": "[3.16.1, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.0-preview3, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[106.11.8-alpha.0.14, )"
@@ -131,6 +147,14 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.0.0-beta2, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             },
             "WebDriverManager": {
               "target": "Package",
@@ -213,6 +237,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.0-preview3, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[106.11.8-alpha.0.14, )"
@@ -229,6 +257,10 @@
               "target": "Package",
               "version": "[3.7.38, )"
             },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
             "SpecFlow.NUnit": {
               "target": "Package",
               "version": "[3.7.38, )"
@@ -236,6 +268,10 @@
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.7.38, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             },
             "WebDriverManager": {
               "target": "Package",

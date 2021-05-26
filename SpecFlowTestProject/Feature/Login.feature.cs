@@ -82,18 +82,12 @@ namespace SpecFlowTestProject.Feature
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("It is possible to login in NewBookModels with valid data")]
-        [NUnit.Framework.TestCaseAttribute("asdasd", "asd", null)]
-        [NUnit.Framework.TestCaseAttribute("asdasd", "asd", null)]
-        [NUnit.Framework.TestCaseAttribute("asd", "asd", null)]
-        [NUnit.Framework.TestCaseAttribute("343324", "asd", null)]
-        public virtual void ItIsPossibleToLoginInNewBookModelsWithValidData(string email, string password, string[] exampleTags)
+        public virtual void ItIsPossibleToLoginInNewBookModelsWithValidData()
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("email", email);
-            argumentsOfScenario.Add("password", password);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is possible to login in NewBookModels with valid data", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 8
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -113,22 +107,22 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 8
+#line 9
         testRunner.Given("Client is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 10
         testRunner.And("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table1.AddRow(new string[] {
-                            string.Format("{0}", email),
-                            string.Format("{0}", password)});
-#line 10
-        testRunner.When("I login with data", ((string)(null)), table1, "When ");
+#line 11
+        testRunner.When("I input valid email in email field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+        testRunner.And("I input valid password in password field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
+        testRunner.And("I click Log in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
         testRunner.Then("Successfully logged in NewBookModels as created client", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -142,7 +136,7 @@ namespace SpecFlowTestProject.Feature
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is not possible to login in NewBookModels with invalid email", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 22
+#line 16
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -162,22 +156,22 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 23
+#line 17
         testRunner.Given("Client is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 24
+#line 18
         testRunner.And("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             "randomEmail",
                             "123qweQWE!"});
-#line 25
-        testRunner.When("I login with invalid email", ((string)(null)), table2, "When ");
+#line 19
+        testRunner.When("I login with invalid email", ((string)(null)), table1, "When ");
 #line hidden
-#line 28
+#line 22
         testRunner.Then("Error message wrong email is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -191,7 +185,7 @@ namespace SpecFlowTestProject.Feature
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is not possible to login in NewBookModels with invalid password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 30
+#line 24
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -211,22 +205,22 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 31
+#line 25
         testRunner.Given("Client is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 32
+#line 26
         testRunner.And("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table3.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "godedo6298@cnxingye.com",
                             "randomPass"});
-#line 33
-        testRunner.When("I login with invalid password", ((string)(null)), table3, "When ");
+#line 27
+        testRunner.When("I login with invalid password", ((string)(null)), table2, "When ");
 #line hidden
-#line 36
+#line 30
         testRunner.Then("Error message wrong password is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -240,8 +234,8 @@ namespace SpecFlowTestProject.Feature
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("It is not possible to login to blocked account in NewBookModels", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 38
-  this.ScenarioInitialize(scenarioInfo);
+#line 32
+    this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -260,20 +254,20 @@ namespace SpecFlowTestProject.Feature
             else
             {
                 this.ScenarioStart();
-#line 39
-    testRunner.Given("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 33
+        testRunner.Given("Sign in page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "email",
                             "password"});
-                table4.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "godedo6298@cnxingye.com",
                             "Mabel123!"});
-#line 40
-    testRunner.When("I login with data", ((string)(null)), table4, "When ");
+#line 34
+        testRunner.When("I login with data", ((string)(null)), table3, "When ");
 #line hidden
-#line 43
-    testRunner.Then("Error message account is blocked is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 37
+        testRunner.Then("Error message account is blocked is displayed on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

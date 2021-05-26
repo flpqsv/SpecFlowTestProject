@@ -22,4 +22,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.codecoverage/16.5.0/build/netstandard1.0/Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage/16.5.0/build/netstandard1.0/Microsoft.CodeCoverage.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">/Users/Mabelle/.nuget/packages/bodi/1.4.1</PkgBoDi>
+  </PropertyGroup>
 </Project>
