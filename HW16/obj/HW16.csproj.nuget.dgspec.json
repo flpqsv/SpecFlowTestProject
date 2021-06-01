@@ -54,6 +54,22 @@
               "target": "Package",
               "version": "[6.0.0-preview3, )"
             },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.8.14, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.7.38, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.8.14, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"

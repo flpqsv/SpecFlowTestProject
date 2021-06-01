@@ -19,7 +19,7 @@ namespace HW16
         [TearDown]
         public void TearDown()
         {
-            //_sqlHelper.ExecuteNonQuery("delete from [Shop].[@public].[Products] where id = 23");
+            _sqlHelper.ExecuteNonQuery("delete from \"Products\" where \"Id\" = 23");
             _sqlHelper.CloseConnection();
         }
 

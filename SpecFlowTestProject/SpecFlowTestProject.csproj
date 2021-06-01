@@ -32,11 +32,11 @@
       <SpecFlowFeatureFiles Update="Feature\AccountSettingsFeature.feature">
         <CodeBehindFile>Feature/AccountSettingsFeature.feature.cs</CodeBehindFile>
       </SpecFlowFeatureFiles>
-      <SpecFlowFeatureFiles Update="Feature\Registration.feature">
-        <CodeBehindFile>Feature/Registration.feature.cs</CodeBehindFile>
-      </SpecFlowFeatureFiles>
       <SpecFlowFeatureFiles Update="Feature\Login.feature">
         <CodeBehindFile>Feature/Login.feature.cs</CodeBehindFile>
+      </SpecFlowFeatureFiles>
+      <SpecFlowFeatureFiles Update="Feature\Registration.feature">
+        <CodeBehindFile>Feature/Registration.feature.cs</CodeBehindFile>
       </SpecFlowFeatureFiles>
     </ItemGroup>
 
@@ -48,6 +48,24 @@
     <ItemGroup>
       <Compile Update="Feature\API\RegFeature.feature.cs">
         <DependentUpon>RegFeature.feature</DependentUpon>
+      </Compile>
+      <Compile Update="Feature\AccountSettingsFeature.feature.cs">
+        <DependentUpon>AccountSettingsFeature.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Feature\Login.feature.cs">
+        <DependentUpon>Login.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Feature\Registration.feature.cs">
+        <DependentUpon>Registration.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
       </Compile>
     </ItemGroup>
 </Project>

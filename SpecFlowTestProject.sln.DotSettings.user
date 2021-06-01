@@ -4,7 +4,20 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ACompanySignUpSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=32E86894_002DE221_002D4034_002DA193_002DCED85D28B27E_002Fd_003ASteps_002Fd_003AUI_002Ff_003ASignInSteps_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=245ba640_002Dc268_002D47d6_002Daa0d_002D00d0c7106026/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ItIsImpossibleToRegisterInNewMookModelsWithInvalidDataProvided" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;ProjectFolder&gt;32E86894-E221-4034-A193-CED85D28B27E/d:Feature/d:API&lt;/ProjectFolder&gt;
+  &lt;Or&gt;
+    &lt;ProjectFolder&gt;32E86894-E221-4034-A193-CED85D28B27E/d:Feature/d:API&lt;/ProjectFolder&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests.Test1&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Tests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.InsertDataInShopsDatabase&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.UpdateDataInShopsDatabase&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.DeleteDataFromShopsDatabase&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.UpdateDataInProductsTable&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.SelectDataFromProductsTable&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.CreateNewTableInShopDatabase&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::2B7ABDA6-3438-4344-87D5-CDF84F6061D0::.NETCoreApp,Version=v3.1::HW16.Feature.DatabaseFeatureFeature.DeleteTableInShopDatabase&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
 	
 	
