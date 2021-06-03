@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Allure.Commons/3.5.0.34": {
+        "type": "package",
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "AngleSharp/0.14.0": {
         "type": "package",
         "dependencies": {
@@ -24,6 +44,18 @@
         },
         "build": {
           "build/_._": {}
+        }
+      },
+      "CsvHelper/26.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
         }
       },
       "Cucumber.Messages/6.0.1": {
@@ -89,7 +121,7 @@
           "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
         }
       },
-      "Microsoft.CSharp/4.4.1": {
+      "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -453,6 +485,15 @@
           }
         }
       },
+      "MimeTypesMap/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -788,6 +829,28 @@
           "build/SpecFlow.targets": {}
         }
       },
+      "SpecFlow.Allure/3.5.0.34": {
+        "type": "package",
+        "dependencies": {
+          "Allure.Commons": "3.5.0.34",
+          "CsvHelper": "26.1.0",
+          "SpecFlow": "[3.5.5, 3.6.0)",
+          "System.Collections.Specialized": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.SpecFlowPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.SpecFlowPlugin.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/allureConfig.Template.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "SpecFlow.Assist.Dynamic/1.4.2": {
         "type": "package",
         "dependencies": {
@@ -905,7 +968,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Specialized.dll": {}
@@ -2075,6 +2138,7 @@
           "Newtonsoft.Json": "13.0.1",
           "Npgsql": "6.0.0-preview3",
           "RestSharp": "106.11.8-alpha.0.14",
+          "SpecFlow.Allure": "3.5.0.34",
           "SpecFlow.Assist.Dynamic": "1.4.2",
           "System.Data.SqlClient": "4.8.2"
         },
@@ -2095,6 +2159,7 @@
           "Npgsql": "6.0.0-preview3",
           "RestSharp": "106.11.8-alpha.0.14",
           "Selenium.WebDriver": "4.0.0-beta2",
+          "SpecFlow.Allure": "3.5.0.34",
           "SpecFlow.Assist.Dynamic": "1.4.2",
           "System.Data.SqlClient": "4.8.2",
           "WebDriverManager": "2.11.1"
@@ -2109,6 +2174,23 @@
     }
   },
   "libraries": {
+    "Allure.Commons/3.5.0.34": {
+      "sha512": "xFfuV6Ji/K+wY2w1ebyochj3GLrr4XYSZ3dI8WTIZyNB2yXPBLQOjKo2k6PsX+qh7ndaedhZpuH8W0VfXRGygw==",
+      "type": "package",
+      "path": "allure.commons/3.5.0.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-net.png",
+        "allure.commons.3.5.0.34.nupkg.sha512",
+        "allure.commons.nuspec",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net45/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net45/Allure.Commons.dll",
+        "lib/netstandard2.0/Allure.Commons.dll"
+      ]
+    },
     "AngleSharp/0.14.0": {
       "sha512": "34w9I7nyszfEYBY8g7T3B0AtWlOivNh+QoWc3KECRwbmcNyqWmb4huihtmpH2Ds7rIRRHMMPv9yfPBxxjBn03g==",
       "type": "package",
@@ -2147,6 +2229,28 @@
         "lib/netstandard2.0/BoDi.dll",
         "lib/netstandard2.0/BoDi.pdb",
         "tools/_._"
+      ]
+    },
+    "CsvHelper/26.1.0": {
+      "sha512": "bcyX9U6OYwx2P5pSgyiULEpGPVu8m+SMnC4atB9W8Srp+jQbsvAwgZ1PxSNfhM4CULhShYTDz22ABroCaxEpOQ==",
+      "type": "package",
+      "path": "csvhelper/26.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.26.1.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "Cucumber.Messages/6.0.1": {
@@ -2242,10 +2346,10 @@
         "microsoft.codecoverage.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.4.1": {
-      "sha512": "A5hI3gk6WpcBI0QGZY6/d5CCaYUxJgi7iENn1uYEng+Olo8RfI5ReGVkjXjeu3VR3srLvVYREATXa2M0X7FYJA==",
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
-      "path": "microsoft.csharp/4.4.1",
+      "path": "microsoft.csharp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2259,6 +2363,7 @@
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
         "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
         "lib/win8/_._",
         "lib/wp80/_._",
         "lib/wpa81/_._",
@@ -2266,7 +2371,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.4.1.nupkg.sha512",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2297,6 +2402,7 @@
         "ref/netstandard2.0/Microsoft.CSharp.dll",
         "ref/netstandard2.0/Microsoft.CSharp.xml",
         "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
         "ref/win8/_._",
         "ref/wp80/_._",
         "ref/wpa81/_._",
@@ -2704,6 +2810,20 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MimeTypesMap/1.0.8": {
+      "sha512": "iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "type": "package",
+      "path": "mimetypesmap/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypesMap.dll",
+        "lib/netstandard1.1/MimeTypesMap.dll",
+        "lib/netstandard2.0/MimeTypesMap.dll",
+        "mimetypesmap.1.0.8.nupkg.sha512",
+        "mimetypesmap.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -3315,6 +3435,23 @@
         "lib/netstandard2.0/TechTalk.SpecFlow.xml",
         "specflow.3.7.38.nupkg.sha512",
         "specflow.nuspec"
+      ]
+    },
+    "SpecFlow.Allure/3.5.0.34": {
+      "sha512": "0XxW1NEhdNoI0JKvK7u1f6ZkisaUjJOgTBjM+0xQjzY3q9M8JMFbbq6/JVInZLoTA/5UvaBeh2vhdnrHpeCaIQ==",
+      "type": "package",
+      "path": "specflow.allure/3.5.0.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-specflow.png",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net461/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net461/Allure.SpecFlowPlugin.dll",
+        "lib/netstandard2.0/Allure.SpecFlowPlugin.dll",
+        "specflow.allure.3.5.0.34.nupkg.sha512",
+        "specflow.allure.nuspec"
       ]
     },
     "SpecFlow.Assist.Dynamic/1.4.2": {
@@ -7231,6 +7368,7 @@
       "Selenium.WebDriver >= 4.0.0-beta2",
       "SeleniumTests >= 1.0.0",
       "SpecFlow >= 3.7.38",
+      "SpecFlow.Allure >= 3.5.0.34",
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.7.38",
       "SpecFlow.Tools.MsBuild.Generation >= 3.7.38",
@@ -7318,6 +7456,10 @@
             "target": "Package",
             "version": "[3.7.38, )"
           },
+          "SpecFlow.Allure": {
+            "target": "Package",
+            "version": "[3.5.0.34, )"
+          },
           "SpecFlow.Assist.Dynamic": {
             "target": "Package",
             "version": "[1.4.2, )"
@@ -7357,5 +7499,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: SpecFlow.Allure 3.5.0.34 requires SpecFlow (>= 3.5.5 && < 3.6.0) but version SpecFlow 3.7.38 was resolved.",
+      "libraryId": "SpecFlow",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
